@@ -1,0 +1,21 @@
+#include <unistd.h>
+
+int ft_iterative_factorial(int nb)
+{
+	int counter;
+	int factorial;
+	
+	counter = nb;
+	while (counter != 0)
+	{
+		factorial = factorial * counter;
+		counter--;
+	}
+	return (factorial);
+}
+
+int main(void)
+{
+	ft_iterative_factorial(5);
+	return (0);
+}
